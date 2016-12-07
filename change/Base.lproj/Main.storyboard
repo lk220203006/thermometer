@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="℉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc2-1s-pX5">
+                                <rect key="frame" x="69.5" y="277.5" width="18.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="me0-mc-COt">
+                                <rect key="frame" x="15" y="313.5" width="127.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oLo-bZ-A31"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmQ-Bi-0vc">
+                                <rect key="frame" x="157.5" y="313.5" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bf7-Jd-pjA"/>
+                                    <constraint firstAttribute="width" constant="60" id="qi5-Pj-uzt"/>
+                                </constraints>
+                                <state key="normal" title="转换"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzE-jx-Tms"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42y-zn-YwE">
+                                <rect key="frame" x="285.5" y="277.5" width="20.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G11-S7-DwE">
+                                <rect key="frame" x="232.5" y="313.5" width="127.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ofv-5p-IBF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YmQ-Bi-0vc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4nH-dw-uIU"/>
+                            <constraint firstItem="me0-mc-COt" firstAttribute="top" secondItem="Xc2-1s-pX5" secondAttribute="bottom" constant="15" id="6V8-yR-rLr"/>
+                            <constraint firstItem="YmQ-Bi-0vc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2O-PM-de9"/>
+                            <constraint firstItem="G11-S7-DwE" firstAttribute="leading" secondItem="YmQ-Bi-0vc" secondAttribute="trailing" constant="15" id="Ipc-aO-LSt"/>
+                            <constraint firstItem="Xc2-1s-pX5" firstAttribute="centerX" secondItem="me0-mc-COt" secondAttribute="centerX" id="WrK-S2-MWv"/>
+                            <constraint firstItem="G11-S7-DwE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bIK-RI-93c"/>
+                            <constraint firstItem="me0-mc-COt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ewK-sp-vMm"/>
+                            <constraint firstItem="YmQ-Bi-0vc" firstAttribute="leading" secondItem="me0-mc-COt" secondAttribute="trailing" constant="15" id="gUv-QO-zfM"/>
+                            <constraint firstItem="G11-S7-DwE" firstAttribute="top" secondItem="42y-zn-YwE" secondAttribute="bottom" constant="15" id="hmK-eL-FFN"/>
+                            <constraint firstItem="42y-zn-YwE" firstAttribute="centerX" secondItem="G11-S7-DwE" secondAttribute="centerX" id="hpu-AX-K7V"/>
+                            <constraint firstAttribute="trailing" secondItem="G11-S7-DwE" secondAttribute="trailing" constant="15" id="wig-zN-RLl"/>
+                            <constraint firstItem="me0-mc-COt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="yWU-rn-Rs9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changebutton" destination="YmQ-Bi-0vc" id="ADm-6D-bgp"/>
+                        <outlet property="fromTextfield" destination="me0-mc-COt" id="qBi-HW-Wg3"/>
+                        <outlet property="toTextField" destination="G11-S7-DwE" id="WK0-xO-fGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
